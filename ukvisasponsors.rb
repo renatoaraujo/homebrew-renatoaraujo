@@ -5,11 +5,11 @@
 class Ukvisasponsors < Formula
   desc ""
   homepage "https://github.com/renatoaraujo/uk-visa-sponsors"
-  version "1.1.2"
+  version "1.1.3"
 
   on_macos do
-    url "https://github.com/renatoaraujo/uk-visa-sponsors/releases/download/v1.1.2/uk-visa-sponsors_1.1.2_darwin_all.tar.gz", using: GitDownloadStrategy
-    sha256 "a24b0365a292b0876885038d463ad0fcdb0dbf0623e355b3adb3a1ea91acb83c"
+    url "https://github.com/renatoaraujo/uk-visa-sponsors/releases/download/v1.1.3/uk-visa-sponsors_1.1.3_darwin_all.tar.gz", using: CurlDownloadStrategy
+    sha256 "e495eaef5b1f5dd6dbe230edf33c6127533cff057fa2532998a1bb672ef1ead2"
 
     def install
       bin.install "uk-visa-sponsors"
@@ -18,16 +18,16 @@ class Ukvisasponsors < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/renatoaraujo/uk-visa-sponsors/releases/download/v1.1.2/uk-visa-sponsors_1.1.2_linux_arm64.tar.gz", using: GitDownloadStrategy
-      sha256 "f0122a8db829d19b8312a50a6550b7d4e25639657e26f1bea724fe4a42ca0ca8"
+      url "https://github.com/renatoaraujo/uk-visa-sponsors/releases/download/v1.1.3/uk-visa-sponsors_1.1.3_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "c6d90deca79e819e7388b13d36230be7197a97d3ca2d39edef845b6940ff5ace"
 
       def install
         bin.install "ukvisasponsors"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/renatoaraujo/uk-visa-sponsors/releases/download/v1.1.2/uk-visa-sponsors_1.1.2_linux_amd64.tar.gz", using: GitDownloadStrategy
-      sha256 "0622eb061811d9c27ded4d384d70f70eba3d6c2404dc36ae59b48a33da4d0537"
+      url "https://github.com/renatoaraujo/uk-visa-sponsors/releases/download/v1.1.3/uk-visa-sponsors_1.1.3_linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "d6fd90e9b2db2f243fcef9186645efb81cfaa9c16d67b202db3a8fb14097938a"
 
       def install
         bin.install "ukvisasponsors"
